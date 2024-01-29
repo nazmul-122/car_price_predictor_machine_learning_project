@@ -1,0 +1,45 @@
+.{
+margin: 0;
+padding:0;
+boc-sizing: border-box;
+
+
+}
+.bg-dark{
+background-color: #76757B;
+
+}
+.mt-50{
+margin-top: 50px;
+}
+.row{
+background-color: #63637A;
+
+}
+.companyselect{
+text-align: center;
+ width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+/* style.css */
+
+.selectpicker-form-control {
+  width: 100%; /* Set the width as needed */
+  padding: 10px; /* Add padding for better appearance */
+  font-size: 16px; /* Set the font size as needed */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width/height */
+  /* Add more styling properties as needed */
+}
+
+/* Style for the options within the dropdown */
+.selectpicker-form-control option {
+  background-color: #333; /* Set background color for options */
+  color: white; /* Set text color for options */
+  /* Add more styling properties for options as needed */
+  border-radius: 15px;
+}

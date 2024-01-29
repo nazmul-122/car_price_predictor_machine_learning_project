@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/CSS/style.css">
+    <title>Car Price Predictor</title>
+
+  </head>
+  <body class="bg-dark">
+
+  <div class="container">
+    <div class="row">
+      <div class="card mt-100" style="width: 100%; height: 100%">
+        <div class="card-header">
+          <div class="col-12 " style="text-align: center">
+            <h1> Welcome to car price predictor</h1>
+
+          </div>
+
+        </div>
+        <div class="card-body">
+          <form method="post" action="#" accept-charset="UTF-8">
+
+            <div class="companyselect" >
+              <label> <b> Select Company:</b></label>
+              <select class="selectpicker-form-control" id="company" name="company"required="1">
+                {% for company in companies %}
+                <option value="{{company}}">
+                  {{company}}
+
+                </option>
+                {% endfor %}
+
+              </select>
+
+            </div>
+
+            <div class="companyselect" style="text-align: center">
+              <label> <b> Select Car model:</b></label>
+              <select class="selectpicker-form-control" id="car_model" name="car_model"required="1">
+                {% for car_model in car_models%}
+                <option value="{{car_model}}">
+                  {{car_model}}
+
+                </option>
+                {% endfor %}
+
+              </select>
+
+            </div>
+
+            <div class="companyselect" style="text-align: center">
+              <label> <b> Select purches year:</b></label>
+              <select class="selectpicker-form-control" id="year" name="year"required="1">
+                {% for year in year%}
+                <option value="{{year}}">
+                  {{year}}
+
+                </option>
+                {% endfor %}
+
+              </select>
+
+            </div>
+
+            <div class="companyselect" style="text-align: center">
+              <label> <b> Select fuel type:</b></label>
+              <select class="selectpicker-form-control" id="fuel_type" name="fuel_type"required="1">
+                {% for fuel_type in fuel_type%}
+                <option value="{{fuel_type}}">
+                  {{fuel_type}}
+
+                </option>
+                {% endfor %}
+
+              </select>
+
+            </div>
+            <div class="companyselect" style="text-align: center">
+              <label> <b> enter kilometer driven:</b></label>
+              <input   type="text" id="kilo_driven" name="kilo_driven" placeholder="enter no of kilometer driven">
+
+            </div>
+            <div class="companyselect" style="text-align: center">
+              <button class="btn-btn-primary-for-control" onclick="">predict price</button>
+            </div>
+
+
+
+          </form>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
